@@ -29,8 +29,7 @@
 		<div class="row">
 			<div class="col">
 				<h1>LED Matrix Animation Creator</h1>
-				<p class="lead">Use <a href="https://www.piskelapp.com/">Piskel</a> (or a simmilar program) to design your animation, export it as a PNG spritesheet (one collumn) and then upload it here.</p>
-				<p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>
+				<p class="lead">Use <a href="https://www.piskelapp.com/">Piskel</a> (or a simmilar program) to design your animation, export it as a PNG spritesheet (one collumn, all frames arranged one below another) and then upload it here.</p>
 			</div>
 			<div class="col-4">
 				<div class="card">
@@ -66,11 +65,11 @@
 		</div>
     </main>
 
-    <footer class="footer">
+    <!--<footer class="footer">
       <div class="container">
         <span class="text-muted">Place sticky footer content here.</span>
       </div>
-    </footer>
+    </footer>-->
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    </head>
   </body>
