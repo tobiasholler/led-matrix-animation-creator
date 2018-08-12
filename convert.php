@@ -4,6 +4,7 @@ $width = $_POST["width"]*1;
 $height = $_POST["height"]*1;
 $datapin = $_POST["datapin"];
 $animationfps = $_POST["animationfps"]*1;
+$brightness = $_POST["brightness"]*0.01;
 $spritesheetfile = $_FILES["spritesheetfile"]["tmp_name"];
 $spritesheetfilename = $_FILES["spritesheetfile"]["name"];
 
@@ -48,6 +49,9 @@ for ($frame = 0; $frame < $frameCount; $frame++) {
                 $r = ($rgb >> 16) & 0xFF;
                 $g = ($rgb >> 8) & 0xFF;
                 $b = $rgb & 0xFF;
+                $r = round($r*$brightness);
+                $g = round($g*$brightness);
+                $b = round($b*$brightness);
                 $code .= "\tleds[$i] = CRGB($r, $g, $b);\n";
             }
         }

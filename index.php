@@ -38,19 +38,28 @@
 						<form action="convert.php" method="POST" enctype="multipart/form-data">
 							<div class="form-group">
 								<label for="width">Matrix Width</label>
-								<input type="number" class="form-control" name="width" />
+								<input type="number" min="1" class="form-control" name="width" />
 							</div>
 							<div class="form-group">
 								<label for="height">Matrix Height</label>
-								<input type="number" class="form-control" name="height" />
+								<input type="number" min="1" class="form-control" name="height" />
 							</div>
 							<div class="form-group">
 								<label for="datapin">Datapin on the Arduino</label>
-								<input type="number" class="form-control" name="datapin" />
+								<input type="number" min="1" class="form-control" name="datapin" />
 							</div>
 							<div class="form-group">
 								<label for="animationfps">Animation Frames Per Second</label>
 								<input type="number" class="form-control" name="animationfps" />
+							</div>
+							<div class="form-group">
+								<label for="brightness">Brightness (Percent)</label>
+								<div class="input-group">
+									<input type="number" min="1" max="100" value="100" class="form-control" name="brightness" />
+									<div class="input-group-append">
+										<div class="input-group-text">%</div>
+									</div>
+								</div>
 							</div>
 							<div class="form-group">
 								<label for="spritesheetfile">Spritesheet File</label>
